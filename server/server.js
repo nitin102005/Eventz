@@ -18,7 +18,7 @@ if (!process.env.JWT_SECRET) {
 
 // Middleware
 app.use(cors({
-    origin: process.env.CLIENT_URL || ['http://localhost:5173', 'http://localhost:4173'],
+    origin: ['https://eventz-lake.vercel.app','http://localhost:5173', 'http://localhost:4173'],
     credentials: true,
 }));
 app.use(express.json());
